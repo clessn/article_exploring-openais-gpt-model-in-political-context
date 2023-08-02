@@ -112,7 +112,9 @@ Data <- prov %>%
   drop_na(theme)
 
 ### save it in data
-#saveRDS(Data, "data/data.rds")
+data_gender_qid_values <- readRDS("data/mp_datasets/full_mp_dataset.rds")
+Data <- left_join(Data, data_gender_qid_values, by = "mp_id")
+saveRDS(Data, "data/data.rds")
 
 # Theme labels ------------------------------------------------------------
 
