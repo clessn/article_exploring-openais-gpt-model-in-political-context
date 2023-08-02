@@ -1,1 +1,2 @@
-# article_prompting-an-openai-gpt-model-in-political-context
+# OpenAI’s GPT Model in Political Context
+## A New Dataset for Political Science Research
